@@ -1477,4 +1477,7 @@ self: super: {
     '';
   });
 
+  # Unnecessary upper bound on vector <0.12.1
+  bitwise-enum = doJailbreak super.bitwise-enum;
+
 } // import ./configuration-tensorflow.nix {inherit pkgs haskellLib;} self super
